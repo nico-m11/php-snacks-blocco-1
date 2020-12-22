@@ -30,8 +30,18 @@
 
  <h2>
    <?php
+   // potevo usare anche il ciclo for, ma leggendo la documentazione questo mi sembrava più semplice
+   // for ($i=0; $i < 5 ; $i++) {
+     // code...
+   //}
     foreach ($partite as $scontro) {
     echo $scontro['squadra casa'] . ' - ' . $scontro['squadra fuori'] . ' | ' . $scontro['punti casa'] . ' - ' . $scontro['punti fuori'] . '<br>';
    }
     ?>
  </h2>
+
+ <h1>Esercizio n°2</h1>
+
+ <?php
+    
+  ?>
