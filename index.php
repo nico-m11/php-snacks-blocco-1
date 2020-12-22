@@ -43,5 +43,15 @@
  <h1>Esercizio n°2</h1>
 
  <?php
-    
+    $name = $_GET['name'];
+    $mail = $_GET['mail'];
+    $age = $_GET['age'];
+
+    // ciclo per effettuare la validità dei dati inseriti
+
+    if (strlen($name) > 3 && strpos($mail, '@') && strpos($mail, '.it') && is_numeric($age)) {
+      echo '<h1>Accesso Eseguito</h1>';
+    } else {
+      echo '<h1>Utente non riconosciuto</h1>';
+    };
   ?>
